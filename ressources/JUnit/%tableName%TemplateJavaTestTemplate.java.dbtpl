@@ -1,0 +1,9 @@
+
+public class ColumnTableTemplateJavaTestTemplate {
+
+	public final static String TABLE_NAME = "{:TDB:TABLE::}";
+	{:TDB:TABLE:COLUMN:FOREACH[
+	public final static String {:TDB:TABLE:COLUMN:FOREACH:CURRENT::}_COLUMN = "{:TDB:TABLE:COLUMN:FOREACH:CURRENT::}";
+	]::}
+	
+}
