@@ -351,3 +351,6 @@
 8385 [AWT-EventQueue-0] INFO  com.mz.UI.Frame.DatabaseDefinitionUI  - Selected index :0
 53389 [AWT-EventQueue-0] WARN  com.mz.database.template.context.handlers.TemplateContextHandlerPackageProvider  - URL Loading
 0    [main] WARN  com.mz.database.template.context.handlers.TemplateContextHandlerPackageProvider  - URL Loading
+0    [main] INFO  com.mz.UI.MainClass  - MainClass start
+0    [main] INFO  com.mz.UI.MainClass  - MainClass start
+0    [main] INFO  com.mz.UI.MainClass  - MainClass start
