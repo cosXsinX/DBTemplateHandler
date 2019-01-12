@@ -1,1 +1,5 @@
 /hamcrest-core-1.1.jar
+/junit-4.10.jar
+/log4j-1.2.17.jar
+/mysql-connector-java-5.1.6.jar
+/sqlite-jdbc-3.8.11.2.jar
