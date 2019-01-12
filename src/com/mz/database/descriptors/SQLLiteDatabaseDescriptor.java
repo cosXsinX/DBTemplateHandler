@@ -2,8 +2,6 @@ package com.mz.database.descriptors;
 
 import org.apache.log4j.Logger;
 
-import com.mz.database.template.handler.TableTemplateHandler;
-
 public class SQLLiteDatabaseDescriptor extends AbstractDatabaseDescriptor {
 	
 	private final static Logger LOGGER = Logger.getLogger(SQLLiteDatabaseDescriptor.class);
