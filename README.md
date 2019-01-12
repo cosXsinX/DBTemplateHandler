@@ -31,9 +31,37 @@ The template handler implement a tabular and minimal tabular database domain spe
 * {:TDB:TABLE:COLUMN:AUTO:FOREACH:CURRENT:IS:LAST:COLUMN( ... )::} : Is replaced by the content between parentheses when the column correspond to the last auto generated value content
 * {:TDB:TABLE:COLUMN:AUTO:FOREACH:CURRENT:IS:NOT:LAST:COLUMN( ... )::} : Is replaced by the content between parentheses when the column correspond to the last auto generated value content
 * {:TDB:TABLE:COLUMN:FOREACH:CURRENT:CONVERT:TYPE( ... )::} : Is replaced by targeted conversion type. Nowadays only one available JAVA => {:TDB:TABLE:COLUMN:FOREACH:CURRENT:CONVERT:TYPE(JAVA)::} only applicable pattern
-
-To be continued ...
-
+* {:TDB:TABLE:COLUMN:FOREACH:CURRENT:INDEX::} : Is replaced by the current column index
+* {:TDB:TABLE:COLUMN:FOREACH:CURRENT:IS:FIRST:COLUMN( ... )::} :  Is replaced by the content between parentheses when the column correspond to the first column of the enumerated columns
+* {:TDB:TABLE:COLUMN:FOREACH:CURRENT:IS:KEY:AUTO( ... )KEY:AUTO:::} : Is replaced by the content between parentheses when the column is auto generated value content
+* {:TDB:TABLE:COLUMN:FOREACH:CURRENT:IS:KEY:NOT:AUTO( ... )KEY:NOT:AUTO:::}  Is replaced by the content between parentheses when the column is not auto generated value content
+* {:TDB:TABLE:COLUMN:FOREACH:CURRENT:IS:KEY:NOT:PRIMARY( ... )KEY:NOT:PRIMARY:::} : Is replaced by the content between parentheses when the column is not primary key value content
+* {:TDB:TABLE:COLUMN:FOREACH:CURRENT:IS:KEY:PRIMARY( ... )KEY:PRIMARY:::} : Is replaced by the content between parentheses when the column is not primary key value content
+* {:TDB:TABLE:COLUMN:FOREACH:CURRENT:IS:LAST:COLUMN( ... ):::} : Is replaced by the content between parentheses when the column correspond to the last column
+* {:TDB:TABLE:COLUMN:FOREACH:CURRENT:IS:NOT:FIRST:COLUMN( ... ):::} : Is replaced by the content between parentheses when the column correspond is not the first column of the enumerated columns
+* {:TDB:TABLE:COLUMN:FOREACH:CURRENT:IS:NOT:LAST:COLUMN( ... ):::} : Is replaced by the content between parentheses when the column correspond is not the last column of the enumerated columns
+* {:TDB:TABLE:COLUMN:FOREACH:CURRENT:IS:NOT:NULL( ... ):::} : Is replaced by the content between parentheses when the column values can be nullable
+* {:TDB:TABLE:COLUMN:FOREACH:CURRENT:NAME::} : Is replaced by the column name
+* {:TDB:TABLE:COLUMN:FOREACH:CURRENT:TYPE::} : Is replaced by the column type
+* {:TDB:TABLE:COLUMN:NOT:AUTO:FOREACH:CURRENT:INDEX::} : Is replaced by the column index in the context of not auto generated column values
+* {:TDB:TABLE:COLUMN:NOT:AUTO:FOREACH:CURRENT:IS:FIRST:COLUMN( ... ):::} : Is replaced by the content between parentheses when the column correspond to the first column of auto generated column collection
+* {:TDB:TABLE:COLUMN:NOT:AUTO:FOREACH:CURRENT:IS:LAST:COLUMN( ... ):::} : Is replaced by the content between parentheses when the column correspond to the last column of auto generated column collection
+* {:TDB:TABLE:COLUMN:NOT:AUTO:FOREACH:CURRENT:IS:NOT:FIRST:COLUMN( ... ):::} : Is replaced by the content between parentheses when the column correspond is not the first column of auto column collection
+* {:TDB:TABLE:COLUMN:NOT:AUTO:FOREACH:CURRENT:IS:NOT:LAST:COLUMN( ... ):::} : Is replaced by the content between parentheses when the column correspond is not the last column of auto column collection
+* {:TDB:TABLE:COLUMN:NOT:NULL:CURRENT:IS:FIRST:COLUMN( ... ):::} : Is replaced by the content between parentheses when the column correspond is the first column of not nullable value column collection
+* {:TDB:TABLE:COLUMN:NOT:NULL:FOREACH:CURRENT:IS:LAST:COLUMN( ... ):::} : Is replaced by the content between parentheses when the column correspond is the last column of not nullable value column collection
+* {:TDB:TABLE:COLUMN:NOT:PRIMARY:FOREACH:CURRENT:INDEX::} : Is replaced by the column index in the context of not primary column enumeration
+* {:TDB:TABLE:COLUMN:NOT:PRIMARY:FOREACH:CURRENT:IS:FIRST:COLUMN( ... ):::} : Is replaced by the content between parentheses when the column correspond to the first column of primary generated column collection
+* {:TDB:TABLE:COLUMN:NOT:PRIMARY:FOREACH:CURRENT:IS:LAST:COLUMN( ... ):::} : Is replaced by the content between parentheses when the column correspond to the last column of primary generated column collection
+* {:TDB:TABLE:COLUMN:NOT:PRIMARY:FOREACH:CURRENT:IS:NOT:FIRST:COLUMN( ... ):::} : Is replaced by the content between parentheses when the column do not correspond to the first column of primary generated column collection
+* {:TDB:TABLE:COLUMN:NOT:PRIMARY:FOREACH:CURRENT:IS:NOT:LAST:COLUMN( ... ):::} : Is replaced by the content between parentheses when the column do not correspond to the last column of primary generated column collection
+* {:TDB:TABLE:COLUMN:PRIMARY:FOREACH:CURRENT:INDEX::} : Is replaced by the column index in the context of primary column enumeration
+* {:TDB:TABLE:COLUMN:PRIMARY:FOREACH:CURRENT:IS:FIRST:COLUMN( ... ):::} : Is replaced by the content between parentheses when the column correspond to the first column of primary enumerated column collection
+* {:TDB:TABLE:COLUMN:PRIMARY:FOREACH:CURRENT:IS:LAST:COLUMN( ... ):::} : Is replaced by the content between parentheses when the column correspond to the last column of primary enumerated column collection
+* {:TDB:TABLE:COLUMN:PRIMARY:FOREACH:CURRENT:IS:NOT:FIRST:COLUMN( ... ):::} : Is replaced by the content between parentheses when the column do not correspond to the first column of primary enumerated column collection
+* {:TDB:TABLE:COLUMN:PRIMARY:FOREACH:CURRENT:IS:NOT:LAST:COLUMN( ... ):::} : Is replaced by the content between parentheses when the column do not correspond to the last column of primary enumerated column collection
+* {:TDB:TABLE:COLUMN:PRIMARY:NOT:NULL:CURRENT:INDEX::} : Is replaced by the column index in the context of not nullable value column enumeration
+ 
 ### Function specific words :
 
 * {:TDB:FUNCTION:FIRST:CHARACTER:TO:UPPER:CASE( ... )::} : Replace the first character of the content by it's upper case
