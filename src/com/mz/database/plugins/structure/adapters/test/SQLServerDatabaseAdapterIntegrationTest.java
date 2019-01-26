@@ -14,7 +14,7 @@ public class SQLServerDatabaseAdapterIntegrationTest {
 	final static String user = "Maximilien";
 	final static String password = "maximax";
 	final static String databaseName = "AdventureWorks2017";
-	final static String serverName = "localhost\\SQLEXPRESS";
+	final static String serverName = "DESKTOP-JNFJSV9\\SQLEXPRESS01";
 	
 	@Test
 	public void test2()

@@ -56,7 +56,14 @@ public class SQLServerDatabaseAdapter {
 		  _serverName = serverName;
 	  }
 	  
-	  private String sqlServerConnectionString = "jdbc:sqlserver://%1s/%2s;user=%3s;password=%4s";
+	  private String sqlServerConnectionString = "jdbc:sqlserver://localhost.database.windows.net:1433;"
+              + "database=%2s;"
+              + "user=%1s@%3s;"
+              + "password=%4s;"
+              + "encrypt=true;"
+              + "trustServerCertificate=false;"
+              + "hostNameInCertificate=*.database.windows.net;"
+              + "loginTimeout=30;";
 	  
 	  private String getConnectionKeyString()
 	  {
