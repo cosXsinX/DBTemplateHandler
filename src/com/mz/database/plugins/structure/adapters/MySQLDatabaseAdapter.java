@@ -56,11 +56,11 @@ public class MySQLDatabaseAdapter {
 		  _serverName = serverName;
 	  }
 	  
+	  private String connectionStringPattern = "jdbc:mysql://%1s/%2s?user=%3s&password=%4s";
+	  
 	  private String getConnectionKeyString()
 	  {
-		  String connectionString = String.format
-				  ("jdbc:mysql://%1s/%2s?user=%3s&password=%4s",
-						  _serverName,_databaseName,_user,_password);
+		  String connectionString = String.format(connectionStringPattern,_serverName,_databaseName,_user,_password);
 		  return connectionString;
 	  }
 	  
@@ -76,6 +76,7 @@ public class MySQLDatabaseAdapter {
 		  if(IsConnectionAvailable()) return connect;
 		// This will load the MySQL driver, each DB has its own driver
 	      Class.forName("com.mysql.jdbc.Driver");
+	      Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 	      // Setup the connection with the DB
 	      connect = DriverManager
 	          .getConnection(getConnectionKeyString());
